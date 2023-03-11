@@ -1,0 +1,10 @@
+{
+  "name": "JATE",
+  "short_name": "JATE",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": "./",
+  "description": "Save info from user input in text editor",
+  "background_color": "#81b29a",
+  "theme_color": "#e07a5f"
+}

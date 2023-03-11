@@ -27,7 +27,24 @@ module.exports = () => {
       new MiniCssExtractPlugin(),
       new InjectManifest({
         swSrc: "./src-sw.js",
-        swDest: "service-worker.js",
+        swDest: "src-sw.js",
+      }),
+
+      new WebpackPwaManifest({
+        name: "JATE",
+        short_name: "JATE",
+        description: "Save info from user input in text editor",
+        background_color: "#81b29a",
+        theme_color: "#e07a5f",
+        start_url: "./",
+        publicPath: "./",
+        // icons: [
+        //   {
+        //     src: path.resolve("assets/images/logo.png"),
+        //     sizes: [96, 128, 192, 256, 384, 512],
+        //     destination: path.join("assets", "icons"),
+        //   },
+        // ],
       }),
       new WorkboxPlugin.GenerateSW(),
     ],
