@@ -38,13 +38,13 @@ module.exports = () => {
         theme_color: "#e07a5f",
         start_url: "./",
         publicPath: "./",
-        // icons: [
-        //   {
-        //     src: path.resolve("assets/images/logo.png"),
-        //     sizes: [96, 128, 192, 256, 384, 512],
-        //     destination: path.join("assets", "icons"),
-        //   },
-        // ],
+        icons: [
+          {
+            src: path.resolve("src/images/logo.png"),
+            sizes: [96, 128, 192, 256, 384, 512],
+            destination: path.join("assets", "icons"),
+          },
+        ],
       }),
       new WorkboxPlugin.GenerateSW(),
     ],
